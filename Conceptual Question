@@ -1,0 +1,30 @@
+1. Describe the problem generics address.
+Generic provide type safety without having to derive from a base collection type and implement type specificed memers.
+Generic also address the problem of code reuse. Don't need to implement another method with different type and same functionality.
+
+2. How would you create a list of strings, using the generic List class?
+List<string> strlist = new List<string>();
+3. How many generic type parameters does the Dictionary class have?
+Dictionary has two type of generic parameters, Tkey and Tvalue, Dictionary<Tkey, Tvalue>
+
+4. True/False. When a generic class has multiple type parameters, they must all match.
+False, can have different type parameters Ex: Dictionary<int, string> dict = new Dictonary<int, string>();
+
+5. What method is used to add items to a List object?
+Use the Add() method, list.Add(element);
+
+6. Name two methods that cause items to be removed from a List.
+Remove() method to remove first occurrence of given element
+RemoveAt() method to remove element at given index 
+
+7. How do you indicate that a class has a generic type parameter?
+Use <T> when define the class. Class myclass<T>{}
+
+8. True/False. Generic classes can only have one generic type parameter.
+False, can have multiple type parameter -- Class myclass <T1, T2> {}
+
+9. True/False. Generic type constraints limit what can be used for the generic type.
+True, using where T: after <T> to limit 
+
+10. True/False. Constraints let you use the methods of the thing you are constraining to
+True
